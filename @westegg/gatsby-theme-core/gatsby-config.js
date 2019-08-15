@@ -1,5 +1,6 @@
 const fs = require('fs')
 const path = require('path')
+const rehypePrism = require('@mapbox/rehype-prism')
 
 module.exports = options => {
   const {
@@ -51,7 +52,9 @@ module.exports = options => {
             options: {
               destinationDir: 'static'
             }
-          }
+          },
+          `gatsby-remark-autolink-headers`,
+          `gatsby-remark-prismjs`
         ]
       }
     },
@@ -70,7 +73,9 @@ module.exports = options => {
         extensions: [`.md`, `.mdx`],
         defaultLayouts: {
           ...mdxLayouts
-        }
+        },
+        rehypePlugins: [rehypePrism],
+        remarkPlugins: []
       }
     })
   }

@@ -12,7 +12,7 @@ module.exports = options => {
         }
       ]
     },
-    mdx = true,
+    mdx = false,
     mdxLayouts = {},
     notes = 'notes',
     notesPath = '/notes',

@@ -4,7 +4,15 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: '@westegg/gatsby-theme-core'
+      resolve: '@westegg/gatsby-theme-core',
+      options: {
+        mdx: true,
+        mdxLayouts: {
+          default: require.resolve(
+            '@westegg/gatsby-theme-misk/src/components/layout.js'
+          )
+        }
+      }
     },
     {
       resolve: '@westegg/gatsby-theme-misk',
