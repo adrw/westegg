@@ -1,0 +1,35 @@
+{
+  "name": "@westegg/gatsby-theme-jasper",
+  "description": "",
+  "version": "0.0.36",
+  "main": "gatsby-config.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run lint && echo 'no build'",
+    "lint": "prettier --write --config package.json \".{/notes/**/,/pages/**/,/posts/**/,/projects/**/,/src/**/,/}*.{md,mdx,css,sass,less,json,js,jsx,ts,tsx}\""
+  },
+  "peerDependencies": {
+    "gatsby": "^2.13.32",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "dependencies": {
+    "gatsby": "2.15.24",
+    "gatsby-theme-casper": "0.1.2",
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
+  },
+  "devDependencies": {
+    "@misk/prettier": "0.1.19"
+  },
+  "prettier": "@misk/prettier",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-theme",
+    "markdown",
+    "mdx",
+    "digital-garden"
+  ],
+  "gitHead": "289c2185e99932b9d41af54f8f9c92dd078da074"
+}

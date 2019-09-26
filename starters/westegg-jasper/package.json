@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "westegg-jasper",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "dependencies": {
+    "@westegg/gatsby-theme-jasper": "*",
+    "gatsby": "2.15.24",
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
+  }
+}
